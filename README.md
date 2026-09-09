@@ -5,8 +5,8 @@
 > `scripts/publish_actions.py` on every release: do not edit it here, changes land upstream
 > and the next release overwrites this tree. Issues: https://github.com/noru-tech/noru-grc-engineering/issues
 >
-> `uses: noru-tech/noru-enforce-action@v0.8.1` and
-> `uses: noru-tech/noru-grc-engineering/actions/enforce@v0.8.1`
+> `uses: noru-tech/noru-enforce-action@v0.9.0` and
+> `uses: noru-tech/noru-grc-engineering/actions/enforce@v0.9.0`
 > are the same code at the same version. The toolkit the action runs (`scripts/`,
 > `plugins/`, `contract/`) is copied verbatim from that tag. `@v0`
 > follows the newest 0.x release.
@@ -143,14 +143,14 @@ that verification; pin a release tag from
 [the releases page](https://github.com/noru-tech/noru-grc-engineering/releases) or a commit SHA to
 take changes only when you choose to. The Marketplace repository is generated from the source
 repository on every release, and both forms at the same tag are the same code. Every plugin and
-action in the toolkit shares one version number, listed in the [changelog](https://github.com/noru-tech/noru-grc-engineering/blob/v0.8.1/CHANGELOG.md).
+action in the toolkit shares one version number, listed in the [changelog](https://github.com/noru-tech/noru-grc-engineering/blob/v0.9.0/CHANGELOG.md).
 
 ## Support and contributing
 
 How enforcement fits the rest of the workflow, including the ruleset, CODEOWNERS and the derived
-worklist, is in [`docs/repository-enforcement.md`](https://github.com/noru-tech/noru-grc-engineering/blob/v0.8.1/docs/repository-enforcement.md). The
+worklist, is in [`docs/repository-enforcement.md`](https://github.com/noru-tech/noru-grc-engineering/blob/v0.9.0/docs/repository-enforcement.md). The
 action is built and tested in
 [`noru-tech/noru-grc-engineering`](https://github.com/noru-tech/noru-grc-engineering), which
-also holds the [contribution guide](https://github.com/noru-tech/noru-grc-engineering/blob/v0.8.1/CONTRIBUTING.md) and the
-[security policy](https://github.com/noru-tech/noru-grc-engineering/blob/v0.8.1/SECURITY.md). Open issues and pull requests there, not in the Marketplace
+also holds the [contribution guide](https://github.com/noru-tech/noru-grc-engineering/blob/v0.9.0/CONTRIBUTING.md) and the
+[security policy](https://github.com/noru-tech/noru-grc-engineering/blob/v0.9.0/SECURITY.md). Open issues and pull requests there, not in the Marketplace
 repository, whose tree is overwritten on every release.
