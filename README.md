@@ -37,11 +37,11 @@ reviewable file plan.
 
 `@v0` follows the newest 0.x release. To take changes only when you
 choose to, pin a full commit SHA and keep the version as a comment, for example
-`uses: noru-tech/noru-enforce-action@<commit-sha> # v0.10.0`. Resolve the commit a release tag points
+`uses: noru-tech/noru-enforce-action@<commit-sha> # v0.11.0`. Resolve the commit a release tag points
 at with:
 
 ```bash
-git ls-remote https://github.com/noru-tech/noru-enforce-action 'refs/tags/v0.10.0^{}'
+git ls-remote https://github.com/noru-tech/noru-enforce-action 'refs/tags/v0.11.0^{}'
 ```
 
 ## Permissions
@@ -58,8 +58,8 @@ The action has no network step and reads no Noru credential; it validates the ch
 > `scripts/publish_actions.py` on every release: do not edit it here, changes land upstream
 > and the next release overwrites this tree. Issues: https://github.com/noru-tech/noru-grc-engineering/issues
 >
-> `uses: noru-tech/noru-enforce-action@v0.10.0` and
-> `uses: noru-tech/noru-grc-engineering/actions/enforce@v0.10.0`
+> `uses: noru-tech/noru-enforce-action@v0.11.0` and
+> `uses: noru-tech/noru-grc-engineering/actions/enforce@v0.11.0`
 > are the same code at the same version. The toolkit the action runs (`scripts/`,
 > `plugins/`, `contract/`) is copied verbatim from that tag. `@v0`
 > follows the newest 0.x release.
@@ -196,14 +196,14 @@ that verification; pin a release tag from
 [the releases page](https://github.com/noru-tech/noru-grc-engineering/releases) or a commit SHA to
 take changes only when you choose to. The Marketplace repository is generated from the source
 repository on every release, and both forms at the same tag are the same code. Every plugin and
-action in the toolkit shares one version number, listed in the [changelog](https://github.com/noru-tech/noru-grc-engineering/blob/v0.10.0/CHANGELOG.md).
+action in the toolkit shares one version number, listed in the [changelog](https://github.com/noru-tech/noru-grc-engineering/blob/v0.11.0/CHANGELOG.md).
 
 ## Support and contributing
 
 How enforcement fits the rest of the workflow, including the ruleset, CODEOWNERS and the derived
-worklist, is in [`docs/repository-enforcement.md`](https://github.com/noru-tech/noru-grc-engineering/blob/v0.10.0/docs/repository-enforcement.md). The
+worklist, is in [`docs/repository-enforcement.md`](https://github.com/noru-tech/noru-grc-engineering/blob/v0.11.0/docs/repository-enforcement.md). The
 action is built and tested in
 [`noru-tech/noru-grc-engineering`](https://github.com/noru-tech/noru-grc-engineering), which
-also holds the [contribution guide](https://github.com/noru-tech/noru-grc-engineering/blob/v0.10.0/CONTRIBUTING.md) and the
-[security policy](https://github.com/noru-tech/noru-grc-engineering/blob/v0.10.0/SECURITY.md). Open issues and pull requests there, not in the Marketplace
+also holds the [contribution guide](https://github.com/noru-tech/noru-grc-engineering/blob/v0.11.0/CONTRIBUTING.md) and the
+[security policy](https://github.com/noru-tech/noru-grc-engineering/blob/v0.11.0/SECURITY.md). Open issues and pull requests there, not in the Marketplace
 repository, whose tree is overwritten on every release.
